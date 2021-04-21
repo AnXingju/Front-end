@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>锦依卫收割机</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body style="background-color:#66ccff">
+    <!-- 选择时候的音频 -->
+    <audio src="music/onijia.mp3" id="onijia" ></audio>
+    <audio src="music/anonie.mp3" id="anonie" ></audio>
+    <audio src="music/huyuigaides.mp3" id="huyuigaides" ></audio>
+    <audio src="music/xilanai.mp3" id="xilanai" ></audio>
+    <!-- 开始菜单 -->
+    <div id="startMenu">
+        <div id="SMHead">选择音源</div>
+        <div id="SHBodyL">
+            <div class="SHBodyText" style="color:#99FFFF">左手</div>
+            <div class="SHBodyText"></div>
+            <div id="LPiano" class="SHBodyText">钢琴音源</div>
+            <div class="SHBodyText"></div>
+        </div>
+        <div id="SHBodyR">
+            <div class="SHBodyText" style="color:#99FFFF">右手</div>
+            <div id="RLA" class="SHBodyText">洛天啦~</div>
+            <div id="RMIAO" class="SHBodyText">洛天喵~</div>
+            <div id="RPiano" class="SHBodyText">钢琴音源</div>
+        </div>
+        <div id="SMBottom">
+            <div id="determine">确定</div>
+            <div id="encourage">赏</div>
+            <div id="teaching">教学</div>
+        </div>
+        <div id="teachingHead">教学</div>
+        <div id="teachingText">
+            <div class="SHBodyText"></div>
+            <div class="SHBodyText"><a href="https://www.bilibili.com/video/BV1HK411s7r3"  target="_blank" class="a">视频教学（BiLiBiLi)</a></div>
+            <div class="SHBodyText">图文教学</div>
+            <div class="SHBodyText"><div class="return">返回</div></div>
+        </div>
+        <div id="encourageHead">赞赏</div>
+        <div id="encourageTest">
+            <div class="SHBodyText"></div>
+            <div class="SHBodyText">点赞 + 投币 + 收藏</div>
+            <div class="SHBodyText"><a href="https://www.bilibili.com/video/BV1HK411s7r3" target="_blank" class="a">马上去三连</a></div>
+            <div class="SHBodyText"><div class="return">返回</div></div>
+        </div>
+    </div>
+    <!-- 手机开始页面 -->
+    <div id="CPStartMenu">
+        <div id="CPMusic" style="width: 100%; top: 0px;  display: block;">
+            <div class="SHBodyText" style="background-color: #39C5BB;color: #66ccff;">选择音源</div>
+            <div class="SHBodyText">洛天啦~</div>
+            <div class="SHBodyText">洛天喵~</div>
+            <div class="SHBodyText">钢琴</div>
+        </div>
+        <div id="CPTeachingText" style="width: 100%;  top: 0px; display: none;">
+            <div class="SHBodyText" style="background-color: #39C5BB;color: #66ccff; top: 0px;">教学内容</div>
+            <div class="SHBodyText" >图文教学~</div>
+            <div class="SHBodyText" ><a href="https://www.bilibili.com/video/BV1bt4y1171g"  target="_blank" class="a">视频教学（BiLiBiLi)</a></div>
+            <div class="SHBodyText" ><div class="return">返回</div></div>
+        </div>
+        <!-- <div id="CPTeachingText">
+            <div class="SHBodyText"></div>
+            <div class="SHBodyText"><a href="https://www.bilibili.com/video/BV1bt4y1171g"  target="_blank" class="a">视频教学（BiLiBiLi)</a></div>
+            <div class="SHBodyText">图文教学</div>
+            <div class="SHBodyText"><div class="return">返回</div></div>
+        </div> -->
+        <div id="SMBottom" style="width: 100%; height: 88px; bottom: 0px; position: absolute;" >
+            <div id="CPDetermine" class="SHBodyText" style="background-color: #39C5BB;color: #66ccff;">确定</div>
+            <div id="CPTeaching" class="SHBodyText" style="background-color: #39C5BB;color: #66ccff; margin-bottom: 0px;">教学</div>
+        </div>
+    </div>
+
+    <!-- 啦 -->
+    <audio src="tianyila/c2.mp3" id="lac2" ></audio>
+    <audio src="tianyila/d2.mp3" id="lad2" ></audio>
+    <audio src="tianyila/e2.mp3" id="lae2" ></audio>
+    <audio src="tianyila/f2.mp3" id="laf2" ></audio>
+    <audio src="tianyila/g2.mp3" id="lag2" ></audio>
+    <audio src="tianyila/a2.mp3" id="laa2" ></audio>
+    <audio src="tianyila/b2.mp3" id="lab2" ></audio>
+    <audio src="tianyila/c3.mp3" id="lac3" ></audio>
+    <audio src="tianyila/d3.mp3" id="lad3" ></audio>
+    <audio src="tianyila/e3.mp3" id="lae3" ></audio>
+    <audio src="tianyila/f3.mp3" id="laf3" ></audio>
+    <audio src="tianyila/g3.mp3" id="lag3" ></audio>
+    <audio src="tianyila/a3.mp3" id="laa3" ></audio>
+    <audio src="tianyila/b3.mp3" id="lab3" ></audio>
+    <audio src="tianyila/c4.mp3" id="lac4" ></audio>
+    <audio src="tianyila/d4.mp3" id="lad4" ></audio>
+    <audio src="tianyila/e4.mp3" id="lae4" ></audio>
+    <audio src="tianyila/f4.mp3" id="laf4" ></audio>
+    <audio src="tianyila/g4.mp3" id="lag4" ></audio>
+    <audio src="tianyila/a4.mp3" id="laa4" ></audio>
+    <audio src="tianyila/b4.mp3" id="lab4" ></audio>
+    <!-- 喵 -->
+    <audio src="tianyimiao/c2.mp3" id="miaoc2" ></audio>
+    <audio src="tianyimiao/d2.mp3" id="miaod2" ></audio>
+    <audio src="tianyimiao/e2.mp3" id="miaoe2" ></audio>
+    <audio src="tianyimiao/f2.mp3" id="miaof2" ></audio>
+    <audio src="tianyimiao/g2.mp3" id="miaog2" ></audio>
+    <audio src="tianyimiao/a2.mp3" id="miaoa2" ></audio>
+    <audio src="tianyimiao/b2.mp3" id="miaob2" ></audio>
+    <audio src="tianyimiao/c3.mp3" id="miaoc3" ></audio>
+    <audio src="tianyimiao/d3.mp3" id="miaod3" ></audio>
+    <audio src="tianyimiao/e3.mp3" id="miaoe3" ></audio>
+    <audio src="tianyimiao/f3.mp3" id="miaof3" ></audio>
+    <audio src="tianyimiao/g3.mp3" id="miaog3" ></audio>
+    <audio src="tianyimiao/a3.mp3" id="miaoa3" ></audio>
+    <audio src="tianyimiao/b3.mp3" id="miaob3" ></audio>
+    <audio src="tianyimiao/c4.mp3" id="miaoc4" ></audio>
+    <audio src="tianyimiao/d4.mp3" id="miaod4" ></audio>
+    <audio src="tianyimiao/e4.mp3" id="miaoe4" ></audio>
+    <audio src="tianyimiao/f4.mp3" id="miaof4" ></audio>
+    <audio src="tianyimiao/g4.mp3" id="miaog4" ></audio>
+    <audio src="tianyimiao/a4.mp3" id="miaoa4" ></audio>
+    <audio src="tianyimiao/b4.mp3" id="miaob4" ></audio>
+    <!-- 钢琴音源 -->
+        <!-- 钢琴部分因为音色的相似度c5才和天依说话的c3相似，所以该一下。所以代码逻辑和上面有的不一样 -->
+    <audio src="piano/c5.mp3" id="pianoc2" ></audio>
+    <audio src="piano/d5.mp3" id="pianod2" ></audio>
+    <audio src="piano/e5.mp3" id="pianoe2" ></audio>
+    <audio src="piano/f5.mp3" id="pianof2" ></audio>
+    <audio src="piano/g5.mp3" id="pianog2" ></audio>
+    <audio src="piano/a5.mp3" id="pianoa2" ></audio>
+    <audio src="piano/b5.mp3" id="pianob2" ></audio>
+    <audio src="piano/c6.mp3" id="pianoc3" ></audio>
+    <audio src="piano/d6.mp3" id="pianod3" ></audio>
+    <audio src="piano/e6.mp3" id="pianoe3" ></audio>
+    <audio src="piano/f6.mp3" id="pianof3" ></audio>
+    <audio src="piano/g6.mp3" id="pianog3" ></audio>
+    <audio src="piano/a6.mp3" id="pianoa3" ></audio>
+    <audio src="piano/b6.mp3" id="pianob3" ></audio>
+    <audio src="piano/c7.mp3" id="pianoc4" ></audio>
+    <audio src="piano/d7.mp3" id="pianod4" ></audio>
+    <audio src="piano/e7.mp3" id="pianoe4" ></audio>
+    <audio src="piano/f7.mp3" id="pianof4" ></audio>
+    <audio src="piano/g7.mp3" id="pianog4" ></audio>
+    <audio src="piano/a7.mp3" id="pianoa4" ></audio>
+    <audio src="piano/b7.mp3" id="pianob4" ></audio>
+        <!-- 左手 -->
+    <audio src="piano/c2.mp3" id="c2" ></audio>
+    <audio src="piano/d2.mp3" id="d2" ></audio>
+    <audio src="piano/e2.mp3" id="e2" ></audio>
+    <audio src="piano/f2.mp3" id="f2" ></audio>
+    <audio src="piano/g2.mp3" id="g2" ></audio>
+    <audio src="piano/a2.mp3" id="a2" ></audio>
+    <audio src="piano/b2.mp3" id="b2" ></audio>
+    <audio src="piano/c3.mp3" id="c3" ></audio>
+    <audio src="piano/d3.mp3" id="d3" ></audio>
+    <audio src="piano/e3.mp3" id="e3" ></audio>
+    <audio src="piano/f3.mp3" id="f3" ></audio>
+    <audio src="piano/g3.mp3" id="g3" ></audio>
+    <audio src="piano/a3.mp3" id="a3" ></audio>
+    <audio src="piano/b3.mp3" id="b3" ></audio>
+    <audio src="piano/c4.mp3" id="c4" ></audio>
+    <audio src="piano/d4.mp3" id="d4" ></audio>
+    <audio src="piano/e4.mp3" id="e4" ></audio>
+    <audio src="piano/f4.mp3" id="f4" ></audio>
+    <audio src="piano/g4.mp3" id="g4" ></audio>
+    <audio src="piano/a4.mp3" id="a4" ></audio>
+    <audio src="piano/b4.mp3" id="b4" ></audio>
+    <!-- 跟换背景颜色过度图像 -->
+    <div id="LTop"></div>
+    <div id="RTop"></div>
+    <div id="LBottom"></div>
+    <div id="RBottom"></div>
+    <div id="lengthenL-R"></div>
+    <div id="lengthenR-L"></div>
+    <div id="bodyRandomRound"></div>
+    <div id="bodyRandomSquare"></div>
+    <!-- 中心变大图像 -->
+    <div id="middleSquare"></div>
+    <div id="middleRound"></div>
+    <div id="middleTriangle"></div>
+    <div id="middleTriangle1"></div>
+    <!-- 随机出现 -->
+        <!-- 旋转的小圆形 -->
+    <div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+        <div class="randomRound"></div>
+    </div>
+        <!-- 旋转正方形 -->
+    <div>
+        <div class="randomSquare"></div>
+        <div class="randomSquare"></div>
+        <div class="randomSquare"></div>
+        <div class="randomSquare"></div>
+        <div class="randomSquare"></div>
+        <div class="randomSquare"></div>
+        <div class="randomSquare"></div>
+        <div class="randomSquare"></div>
+        <div class="randomSquare"></div>
+        <div class="randomSquare"></div>
+        <div class="randomSquare"></div>
+        <div class="randomSquare"></div>
+    </div>
+        <!-- 旋转三角形 -->
+    <div>
+        <div class="randomTriangle"></div>
+        <div class="randomTriangle"></div>
+        <div class="randomTriangle"></div>
+        <div class="randomTriangle"></div>
+        <div class="randomTriangle"></div>
+        <div class="randomTriangle"></div>
+        <div class="randomTriangle"></div>
+        <div class="randomTriangle"></div>
+        <div class="randomTriangle"></div>
+        <div class="randomTriangle"></div>
+        <div class="randomTriangle"></div>
+    </div>
+    <!-- 随机出现空心图形 -->
+        <!-- 圆形 -->
+    <div>
+        <div class="hollowRound"></div>
+        <div class="hollowRound"></div>
+        <div class="hollowRound"></div>
+        <div class="hollowRound"></div>
+        <div class="hollowRound"></div>
+        <div class="hollowRound"></div>
+        <div class="hollowRound"></div>
+        <div class="hollowRound"></div>
+        <div class="hollowRound"></div>
+        <div class="hollowRound"></div>
+        <div class="hollowRound"></div>
+        <div class="hollowRound"></div>
+    </div>
+        <!-- 正方形 -->
+    <div>
+        <div class="hollowSquare"></div>
+        <div class="hollowSquare"></div>
+        <div class="hollowSquare"></div>
+        <div class="hollowSquare"></div>
+        <div class="hollowSquare"></div>
+        <div class="hollowSquare"></div>
+        <div class="hollowSquare"></div>
+        <div class="hollowSquare"></div>
+        <div class="hollowSquare"></div>
+        <div class="hollowSquare"></div>
+        <div class="hollowSquare"></div>
+        <div class="hollowSquare"></div>
+    </div>
+    <!-- 中心爆开图形 -->
+        <!-- 正方形 -->
+    <div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+        <div class="blastSquare"></div>
+    </div>
+        <!-- 圆形 -->
+    <div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+        <div class="blastRound"></div>
+    </div>
+    <!-- 从上往下出现，从左往右变长 -->
+        <!-- 正方形 -->
+    <div id="middleSquareDisplay">
+        <div class="middleSquareDisplay"></div>
+        <div class="middleSquareDisplay"></div>
+        <div class="middleSquareDisplay"></div>
+    </div>
+    <div id="middleSquareDisplay1">
+        <div class="middleSquareDisplay"></div>
+        <div class="middleSquareDisplay"></div>
+        <div class="middleSquareDisplay"></div>
+    </div>
+    <div id="middleSquareDisplay2">
+        <div class="middleSquareDisplay"></div>
+        <div class="middleSquareDisplay"></div>
+        <div class="middleSquareDisplay"></div>
+    </div>
+    <div id="middleRoundDisplay">
+        <div class="middleRoundDisplay"></div>
+        <div class="middleRoundDisplay"></div>
+        <div class="middleRoundDisplay"></div>
+    </div>
+    <div id="middleRoundDisplay1">
+        <div class="middleRoundDisplay"></div>
+        <div class="middleRoundDisplay"></div>
+        <div class="middleRoundDisplay"></div>
+    </div>
+    <div id="middleRoundDisplay2">
+        <div class="middleRoundDisplay"></div>
+        <div class="middleRoundDisplay"></div>
+        <div class="middleRoundDisplay"></div>
+    </div>
+    <!-- 显示个X -->
+    <div id="displayXL">
+        <div class="displayX"></div>
+        <div class="displayX"></div>
+    </div>
+    <div id="displayXR">
+        <div class="displayX"></div>
+        <div class="displayX"></div>
+    </div>
+
+    <!-- 手机打击垫 -->
+    <div id="cellphone" >
+        <div class="CPLaunchPad"></div><div class="CPLaunchPad"></div><div class="CPLaunchPad"></div>
+        <div class="CPLaunchPad"></div><div class="CPLaunchPad"></div><div class="CPLaunchPad"></div>
+        <div class="CPLaunchPad"></div><div class="CPLaunchPad"></div><div class="CPLaunchPad"></div>
+        <div class="CPLaunchPad"></div><div class="CPLaunchPad"></div><div class="CPLaunchPad"></div>
+        <div class="CPLaunchPad"></div><div class="CPLaunchPad"></div><div class="CPLaunchPad"></div>
+        <div class="CPLaunchPad"></div><div class="CPLaunchPad"></div><div class="CPLaunchPad"></div>
+    </div>
+    <div id="menu">选择音源</div>
+</body>
+<script src="script.js"></script>
+</html>

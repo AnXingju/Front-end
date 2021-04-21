@@ -1,0 +1,157 @@
+html{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+.center{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.musicSearch{
+	width: 500px;
+	height: 80px;
+	position: aelative;
+	padding-left: 20px;
+	border: 0px solid #CCCCCC;
+	border-radius: 20px;
+	font-size: 46px;
+}
+.searchButte{
+	width: 150px;
+	height: 80px;
+	padding-left: 20px;
+	border: 0px solid #CCCCCC;
+	background-color: #00000000;
+	border-radius: 20px;
+	font-size: 46px;
+}
+.inputBorder{
+	width: 690px;
+	border: 4px solid #ccc;
+	border-radius: 26px;
+}
+.musicName{
+	position: absolute;
+	width: 100%;
+	height: calc(100% - 500px);
+	background-color: #39C5BB;
+	top: 300px;
+	overflow: auto;
+}
+.musicValue{
+	width: calc(100% - 100px);
+	height: 120px;
+	position: relative;
+	border-bottom: 2px solid #ccc;
+	display: flex;
+	left: 0px;
+	justify-content: flex-start;
+	font-size: 46px;
+	align-items: center;
+	padding-left: 100px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.audioClass{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	bottom: 0px;
+	/* display: flex;
+	align-items: center; */
+}
+.musicCover{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	border-radius: 50%;
+	top: 25px;
+	left: 25px;
+	background-color: #66CCFF;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	animation: coverRotate 8s linear infinite;
+	animation-play-state:paused;
+}
+.rotate{
+	animation-play-state:running;
+}
+@keyframes coverRotate
+{
+0%{
+	transform: rotate(0deg);
+}
+100%{
+	transform: rotate(360deg);
+	}
+}
+
+.musicPlayValue{
+	width: calc(100% - 500px);
+	height: 150px;
+	/* background-color: #66CCFF; */
+	position: absolute;
+	bottom: 25px;
+	left: 200px;
+}
+.musicPlayClick{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	bottom: 25px;
+	right: 125px;
+	/* background-color: #66CCFF; */
+}
+.musicDownload{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 75px;
+	right: 37px;
+	/* background-color: #66CCFF; */
+	color: #ff6b8e;
+}
+.cssMusicName{
+	width: 100%;
+	height: 75px;
+	position: relative;
+	top: 0px;
+	/* background-color: #39C5BB; */
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: flex;
+	align-items: center;
+	font-size: 40px;
+	color: #66CCFF;
+	font-weight: 600;
+}
+.cssMusicAuthor{
+	width: 100%;
+	height: 75px;
+	position: relative;
+	top: 0px;
+	/* background-color: #39C5BB; */
+	display: flex;
+	text-indent: 50px;
+	align-items: center;
+	font-size: 30px;
+	color: #ccc;
+}
+.classMiddle{
+	position: relative;
+	top: 18px;
+	left: 25px;
+	/* transform: translate( -50%, -50% ); */
+	color: #66ccff;
+}
+/* .flex{
+	width: 100%;
+	height: 100%;
+	position: ;
+} */

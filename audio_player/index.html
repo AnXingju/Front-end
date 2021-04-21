@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>在线音乐播放器</title>
+		<link href="cs.css" type="text/css" media="screen" rel="stylesheet" />
+		<link href="https://at.alicdn.com/t/font_1963938_jcwhywpcrnf.css" type="text/css" media="screen" rel="stylesheet" />
+		<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
+		<div class="vue">
+			<div class="center" style=" top: 20px;">
+				<span style="font-size: 90px;color: #66CCFF;">在线音乐</span>
+			</div>
+			<div class="center" style="top: 50px;">
+				<div class="center inputBorder">
+					<input type="text" placeholder="输入歌曲或歌手名" class="musicSearch" v-model="query" @keydown.enter="clickSearch()"/>
+					<input type="button" class="searchButte" @click="clickSearch()" value="搜索"></input>
+				</div>
+			</div>
+			<div class="musicName">
+				<div class="musicValue" v-for="item in musicList" @click="selectMusic(item.id, item.name, item.artists)" >
+					{{ item.name }}
+					<span style="color: #66CCFF;font-size: 50px;">-</span>
+					<span v-for="(data,index) in item.artists" style="font-size: 40px;color: #666;">
+					{{data.name}}<span v-if="index < item.artists.length-1">、</span>
+					</span>
+				</div>
+			</div>
+			<div class="audioClass">
+				<audio :src="musicUrl" autoplay="autoplay" style="width: 100%;" id="music" @play="play()" @pause="pause()" loop="loop" ></audio>
+				<div class="flex">
+					<div :class="musicCoverRotate">
+						<img :src="musicCover" style="height: 100%;"/>
+						</div>
+					<div class="musicPlayValue">
+						<div class="cssMusicName">{{ musicName }}</div>
+						<div class="cssMusicAuthor">{{ musicAuthorName }}</div>
+					</div>
+					<div class="musicPlayClick" @click="musicPlay()">
+						<!-- <span class="iconfont icon-zanting "></span> -->
+						<!-- <img src="playImg.png" /> -->
+						<span :class="classPlayKey" style="	font-size: 100px;"></span>
+					</div>
+					<a :href="musicUrl" :download="musicUrl">
+						<div class=" iconfont icon-xiazai musicDownload" style="font-size: 50px;"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js.js"></script>
+</html>
